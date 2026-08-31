@@ -16,12 +16,21 @@ Você pode publicar esta pasta em:
 - Vercel
 - Netlify
 
+## Contatos configurados
+- WhatsApp: (11) 9.1536-8315
+- E-mail: jansen.ramos@gmail.com
+
 ## Antes de publicar
-Edite no `index.html`:
-1. Link do WhatsApp em `https://wa.me/`
-2. E-mail `contato@rede.com.br`
-3. Textos/cases que quiser tornar públicos
-4. Logo oficial, caso queira substituir a marca tipográfica usada no protótipo
+1. Revisar a logo oficial, caso queira substituir a marca tipográfica do protótipo.
+2. Revisar textos/cases que quiser tornar públicos.
+3. Validar a experiência em celular e desktop.
 
 ## Observação
 A versão atual usa uma marca tipográfica “REDE” criada apenas em HTML/CSS. Não altera nem substitui a logo oficial.
+
+
+## Logos incluídas
+- `assets/rede-logo-full.jpg` → logo horizontal principal
+- `assets/rede-logo-monograma.png` → monograma
+
+Ao subir para o GitHub, envie também a pasta `assets` inteira.

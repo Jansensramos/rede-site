@@ -320,3 +320,59 @@ footer { background: #07100e; color: white; padding: 55px 0; }
   .case-card { min-height: 220px; }
   .case-card h3 { margin-top: 42px; }
 }
+
+
+/* ===== V4 logo integration ===== */
+.brand-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.brand-logo-header {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.brand-logo-footer {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.nav { min-height: 94px; }
+
+.about-split {
+  align-items: start;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.about-logo-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+  padding: 18px;
+}
+.about-mark {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .brand-logo-header { width: 240px; }
+  .about-content { grid-template-columns: 1fr; }
+  .about-logo-card { max-width: 180px; }
+}
+
+@media (max-width: 560px) {
+  .nav { min-height: 84px; }
+  .brand-logo-header { width: 190px; }
+  .brand-logo-footer { width: 180px; }
+}
