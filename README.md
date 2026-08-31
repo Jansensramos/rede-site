@@ -30,7 +30,7 @@ A versão atual usa uma marca tipográfica “REDE” criada apenas em HTML/CSS.
 
 
 ## Logos incluídas
-- `assets/rede-logo-full.jpg` → logo horizontal principal
-- `assets/rede-logo-monograma.png` → monograma
+- `rede-logo-full.jpg` → logo horizontal principal
+- `rede-logo-monograma.png` → monograma
 
-Ao subir para o GitHub, envie também a pasta `assets` inteira.
+As duas imagens ficam diretamente na raiz do repositório.
