@@ -376,3 +376,100 @@ footer { background: #07100e; color: white; padding: 55px 0; }
   .brand-logo-header { width: 190px; }
   .brand-logo-footer { width: 180px; }
 }
+
+
+/* ===== V5 refinamento de aplicação da marca ===== */
+.nav-wrap {
+  background: rgba(244,241,235,.92);
+}
+
+.nav {
+  min-height: 88px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo-header {
+  display: block;
+  width: 205px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.brand-logo-footer {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: .96;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.about-content {
+  align-items: center;
+}
+
+.about-logo-card {
+  display: none;
+}
+
+.about-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  min-height: 170px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  padding: 18px;
+}
+
+.about-mark {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+footer {
+  background: #07100e;
+}
+
+.footer-grid {
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .brand-logo-header {
+    width: 175px;
+  }
+  .about-logo-wrap {
+    width: 140px;
+    min-height: 140px;
+  }
+  .about-mark {
+    max-width: 95px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav {
+    min-height: 82px;
+  }
+  .brand-logo-header {
+    width: 150px;
+  }
+  .brand-logo-footer {
+    width: 150px;
+  }
+}

@@ -34,3 +34,11 @@ A versão atual usa uma marca tipográfica “REDE” criada apenas em HTML/CSS.
 - `rede-logo-monograma.png` → monograma
 
 As duas imagens ficam diretamente na raiz do repositório.
+
+
+## V5 – Aplicação refinada da marca
+Nesta versão:
+- a logo do topo usa fundo transparente;
+- a logo do rodapé usa fundo transparente;
+- o monograma foi integrado de forma mais sutil na seção institucional;
+- a aplicação visual da marca ficou mais limpa.
