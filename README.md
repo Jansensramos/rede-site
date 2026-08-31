@@ -42,3 +42,10 @@ Nesta versão:
 - a logo do rodapé usa fundo transparente;
 - o monograma foi integrado de forma mais sutil na seção institucional;
 - a aplicação visual da marca ficou mais limpa.
+
+
+## V6 – Marca mais limpa
+- remove o monograma da seção institucional;
+- mantém a logo completa apenas no cabeçalho;
+- usa somente o monograma no rodapé;
+- reforça a hierarquia visual e reduz repetição da marca.
