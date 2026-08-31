@@ -49,3 +49,9 @@ Nesta versão:
 - mantém a logo completa apenas no cabeçalho;
 - usa somente o monograma no rodapé;
 - reforça a hierarquia visual e reduz repetição da marca.
+
+
+## V6.1 – Rodapé ajustado
+- monograma do rodapé reduzido;
+- grid do rodapé mais equilibrado;
+- leitura mais limpa e menos dominante.

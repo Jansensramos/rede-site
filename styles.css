@@ -525,3 +525,41 @@ footer {
     width: 68px;
   }
 }
+
+
+/* ===== V6.1 — ajuste fino do rodapé ===== */
+.footer-grid-v6 {
+  grid-template-columns: 70px 1fr auto;
+  gap: 28px;
+}
+
+.footer-monogram {
+  width: 42px;
+  max-width: 42px;
+  height: auto;
+}
+
+.footer-grid-v6 > p {
+  font-size: 12px;
+}
+
+.footer-grid-v6 > p:nth-of-type(1) {
+  text-align: left;
+  max-width: 420px;
+}
+
+.footer-grid-v6 > p:nth-of-type(2) {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .footer-monogram {
+    width: 34px;
+    max-width: 34px;
+  }
+
+  .footer-grid-v6 {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
