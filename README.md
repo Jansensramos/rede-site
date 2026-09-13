@@ -51,7 +51,5 @@ Nesta versão:
 - reforça a hierarquia visual e reduz repetição da marca.
 
 
-## V6.1 – Rodapé ajustado
-- monograma do rodapé reduzido;
-- grid do rodapé mais equilibrado;
-- leitura mais limpa e menos dominante.
+## V7
+Narrativa refeita para problema, solução, domínios, arquitetura, Cognitive Layer e valor para CFO/CIO/direção.
