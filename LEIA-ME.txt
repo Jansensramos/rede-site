@@ -1,0 +1,17 @@
+REDE Intelligence — V8.2 revisada
+
+CORREÇÕES:
+- escala tipográfica reduzida e normalizada;
+- hero e seções menos altos;
+- cards mais compactos;
+- menu volta a mostrar CONTATO explicitamente;
+- WhatsApp flutuante discreto;
+- contato completo mantido no CTA final;
+- monograma do rodapé fixado em 34 px;
+- arquivo único: todo CSS e JS continuam embutidos no index.html.
+
+NO GITHUB:
+1. Substitua somente index.html.
+2. Confirme que rede-logo-full-transparente.png e rede-logo-monograma-transparente.png permanecem na raiz.
+3. Commit changes.
+4. Aguarde e use Ctrl+F5.
