@@ -29,3 +29,7 @@ Favicon restaurado usando o monograma transparente da REDE. Cache-buster v=3 inc
 
 ## V9.3
 Logo principal do site substituída pela nova arte enviada pelo usuário. Monograma/favicons mantidos.
+
+
+## V9.4
+Logo principal do site atualizada para a versão sem fundo (PNG transparente), mais elegante para header e aplicações web.
