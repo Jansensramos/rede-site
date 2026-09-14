@@ -25,3 +25,7 @@ Identificadores internos de fases cognitivas (10A, 10B etc.) removidos da comuni
 
 ## V9.2
 Favicon restaurado usando o monograma transparente da REDE. Cache-buster v=3 incluído.
+
+
+## V9.3
+Logo principal do site substituída pela nova arte enviada pelo usuário. Monograma/favicons mantidos.
