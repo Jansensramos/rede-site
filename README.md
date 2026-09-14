@@ -21,3 +21,7 @@ Contato atual mantido: jansen.ramos@gmail.com. E-mail corporativo não foi inven
 
 ## V9.1 pública
 Identificadores internos de fases cognitivas (10A, 10B etc.) removidos da comunicação pública. Os estados de maturidade permanecem: concluído, em desenvolvimento e roadmap.
+
+
+## V9.2
+Favicon restaurado usando o monograma transparente da REDE. Cache-buster v=3 incluído.
