@@ -1,0 +1,12 @@
+E-MAIL CORPORATIVO - RECOMENDAÇÃO
+
+Não publicar endereço corporativo antes de ele existir e receber mensagens.
+
+Sugestão de aliases após contratação de domínio/provedor:
+- contato@SEU-DOMINIO
+- comercial@SEU-DOMINIO
+- investidores@SEU-DOMINIO
+- privacidade@SEU-DOMINIO
+- seguranca@SEU-DOMINIO
+
+Depois de ativar DNS/MX/SPF/DKIM/DMARC, substituir jansen.ramos@gmail.com no index.html e seguranca.html.

@@ -1,24 +1,19 @@
-# REDE Intelligence — Site V8 Oficial
+# REDE Intelligence - Site V9 Truth-Aligned
 
-Versão reestruturada a partir do Product Bible e dos materiais institucionais/técnicos da REDE.
+Arquivos principais:
+- index.html
+- seguranca.html
+- logos transparentes
 
-## Narrativa
-1. Hero e posicionamento
-2. Prova institucional
-3. Problema
-4. Solução e cadeia econômica
-5. Plataforma e módulos
-6. Diferença vs ERP / BI / IA genérica
-7. Economic Chain Engine / Decision Ledger / Learning Loop
-8. REDE Cognitive Layer
-9. CFO / CIO / Direção
-10. Experiência do fundador
-11. Implantação piloto
-12. CTA
+Mudanças:
+- nova mensagem central orientada a margem, risco e decisão;
+- CTA para Diagnóstico Executivo de Margem e Decisão;
+- separação explícita entre operacional hoje, piloto, provider-neutral, desenvolvimento e roadmap;
+- 10A concluída, 10B em desenvolvimento, 10C-10I roadmap;
+- posicionamento correto frente a ERP contábil/fiscal/folha;
+- ICP e jornada de compra atualizados;
+- FAQ executivo;
+- página separada de Segurança e Governança;
+- visualização conceitual do fluxo identificada como tal, sem fingir screenshot real.
 
-## Contatos
-- WhatsApp: (11) 9.1536-8315
-- E-mail: jansen.ramos@gmail.com
-
-## Publicação
-Substituir os arquivos do repositório GitHub Pages pelos arquivos desta versão.
+Contato atual mantido: jansen.ramos@gmail.com. E-mail corporativo não foi inventado; requer domínio e provedor de e-mail ativos.
