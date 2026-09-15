@@ -33,3 +33,10 @@ Logo principal do site substituída pela nova arte enviada pelo usuário. Monogr
 
 ## V9.4
 Logo principal do site atualizada para a versão sem fundo (PNG transparente), mais elegante para header e aplicações web.
+
+## V9.5 — Português + formulário
+- Comunicação pública revisada para português;
+- termos técnicos em inglês traduzidos ou explicados em português;
+- formulário com Nome, E-mail, Telefone, Assunto e Mensagem;
+- envio atual para jansen.ramos@gmail.com via FormSubmit;
+- após criar o e-mail corporativo, basta trocar o destinatário no atributo action do formulário.
