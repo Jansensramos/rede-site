@@ -112,3 +112,7 @@ Página de Segurança harmonizada com a identidade atual: remoção do verde-lim
 
 ## V9.8.2
 Hero reescrito para comunicação imediata com público não técnico. A abertura agora explica diretamente o que a REDE faz, qual problema resolve e qual impacto acompanha.
+
+
+## V9.8.3
+Hero principal simplificado: título mais curto, mais claro e com tamanho reduzido para melhorar leitura e impacto imediato.
