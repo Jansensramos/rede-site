@@ -116,3 +116,11 @@ Hero reescrito para comunicação imediata com público não técnico. A abertur
 
 ## V9.8.3
 Hero principal simplificado: título mais curto, mais claro e com tamanho reduzido para melhorar leitura e impacto imediato.
+
+
+## V9.8.4
+Refino visual do hero: título com peso menor, escala reduzida e linguagem tipográfica mais alinhada à elegância das seções internas.
+
+
+## V9.8.5
+Hero mais dinâmico e imediato (“Veja o que mudou. Entenda o impacto. Decida melhor.”) e revisão tipográfica global para melhorar ritmo, hierarquia e elegância em desktop e mobile.
