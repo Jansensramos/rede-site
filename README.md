@@ -93,3 +93,14 @@ Refino de paleta e acabamento: removido o verde-lima neon; acentos substituídos
 
 ## V9.7.3.1
 Correção da seção Diagnóstico: removida a sobreposição de título e descrição nos passos 01–06, ajustando o seletor CSS para os itens diretos e refinando o bloco `.diag-copy`.
+
+
+## V9.8 — narrativa, conceito e arquitetura
+- hero reescrito como convite e promessa, não imposição;
+- ICP ampliado conforme direção aprovada;
+- removida a faixa técnica sem contexto do topo;
+- narrativa reorganizada em desafio → arquitetura → uso atual → diagnóstico → prova de valor;
+- nova arquitetura visual em cinco etapas: fontes → contexto → impacto → decisão → resultado;
+- distinção explícita entre recursos atuais, piloto, conexões e evolução;
+- linguagem revisada para reduzir jargão e repetições;
+- responsividade e seletores revisados para evitar sobreposição de conteúdo.
