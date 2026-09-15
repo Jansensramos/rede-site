@@ -104,3 +104,11 @@ Correção da seção Diagnóstico: removida a sobreposição de título e descr
 - distinção explícita entre recursos atuais, piloto, conexões e evolução;
 - linguagem revisada para reduzir jargão e repetições;
 - responsividade e seletores revisados para evitar sobreposição de conteúdo.
+
+
+## V9.8.1
+Página de Segurança harmonizada com a identidade atual: remoção do verde-lima e substituição por azul profundo, dourado/bronze e off-white quente.
+
+
+## V9.8.2
+Hero reescrito para comunicação imediata com público não técnico. A abertura agora explica diretamente o que a REDE faz, qual problema resolve e qual impacto acompanha.
