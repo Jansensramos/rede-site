@@ -50,3 +50,11 @@ Logo principal do site atualizada para a versão sem fundo (PNG transparente), m
 - nova seção "Prova de valor" com métricas de piloto;
 - ICP explicitado no hero;
 - FAQ revisado.
+
+
+## V9.6.1
+Ajuste de contraste na seção “Onde a REDE entra”: cartões 01 e 02 clareados, tipografia escurecida e nota inferior com melhor legibilidade.
+
+
+## V9.6.2
+Removida a palavra “regionais” do bloco “Para quem”.
