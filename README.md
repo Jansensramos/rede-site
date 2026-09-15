@@ -89,3 +89,7 @@ Refino de paleta e acabamento: removido o verde-lima neon; acentos substituídos
 - melhorias de contraste, hierarquia e responsividade;
 - correção semântica dos passos do diagnóstico (elementos internos não usam mais tags section indevidamente);
 - linguagem visual orientada a SaaS B2B premium / enterprise boutique.
+
+
+## V9.7.3.1
+Correção da seção Diagnóstico: removida a sobreposição de título e descrição nos passos 01–06, ajustando o seletor CSS para os itens diretos e refinando o bloco `.diag-copy`.
