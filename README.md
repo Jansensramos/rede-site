@@ -124,3 +124,11 @@ Refino visual do hero: título com peso menor, escala reduzida e linguagem tipog
 
 ## V9.8.5
 Hero mais dinâmico e imediato (“Veja o que mudou. Entenda o impacto. Decida melhor.”) e revisão tipográfica global para melhorar ritmo, hierarquia e elegância em desktop e mobile.
+
+
+## V9.8.6
+Bloco “Para quem” simplificado para melhorar clareza e leitura no mobile.
+
+
+## V9.8.7
+Bloco “Para quem” atualizado com a definição final aprovada e ajustes de legibilidade para desktop e mobile.
