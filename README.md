@@ -40,3 +40,13 @@ Logo principal do site atualizada para a versão sem fundo (PNG transparente), m
 - formulário com Nome, E-mail, Telefone, Assunto e Mensagem;
 - envio atual para jansen.ramos@gmail.com via FormSubmit;
 - após criar o e-mail corporativo, basta trocar o destinatário no atributo action do formulário.
+
+## V9.6 — posicionamento competitivo
+- linguagem pública ajustada após análise de Senior/Mega, Sienge e TOTVS;
+- removida a simplificação de que ERP apenas registra;
+- posicionamento passa a reconhecer analytics e IA em plataformas maduras;
+- reforço de coexistência com ERP e demais sistemas;
+- nova seção "Onde a REDE entra";
+- nova seção "Prova de valor" com métricas de piloto;
+- ICP explicitado no hero;
+- FAQ revisado.
