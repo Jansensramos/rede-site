@@ -62,3 +62,11 @@ Removida a palavra “regionais” do bloco “Para quem”.
 
 ## V9.6.3
 Os três cartões da seção “Onde a REDE entra” foram unificados em uma paleta clara e elegante. O cartão REDE recebeu apenas um tom verde-sálvia muito suave e uma linha lateral verde para manter destaque sem prejudicar a leitura.
+
+
+## V9.7 — texto mais fluido
+- redução de repetições entre hero, problema, diagnóstico e prova de valor;
+- reorganização da narrativa: problema → como ajuda → o que já pode usar → onde entra → piloto → evolução;
+- remoção de termos internos e jargões desnecessários;
+- linguagem mais natural, executiva e comercial;
+- simplificação do roadmap público e das descrições técnicas.
