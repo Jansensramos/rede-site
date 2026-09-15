@@ -25,13 +25,13 @@
 .hero-icp span{font-size:9px;letter-spacing:.16em;font-weight:900;color:var(--muted)}
 .hero-icp strong{font:700 12px/1.5 Manrope,Inter,Arial,sans-serif;color:#33403b}
 .ecosystem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.ecosystem-card{border:1px solid rgba(255,255,255,.08);background:#f1efe8;padding:28px;min-height:245px;box-shadow:0 10px 24px rgba(0,0,0,.08)}
-.ecosystem-card>span,.value-grid article>span{font-size:9px;letter-spacing:.18em;color:#6a746f;font-weight:900}
-.ecosystem-card h3{font-size:22px;margin:36px 0 10px;color:#16201d}
-.ecosystem-card p{font-size:13px;color:#44504b;margin:0;line-height:1.65}
-.ecosystem-card.rede-focus{background:var(--dark);color:#fff;border-color:rgba(201,255,74,.18);box-shadow:none}
-.ecosystem-card.rede-focus>span{color:var(--lime)}
-.ecosystem-card.rede-focus p{color:#aab5b0}
+.ecosystem-card{border:1px solid rgba(78,95,88,.18);background:#f3f0e9;padding:28px;min-height:245px;box-shadow:0 12px 28px rgba(0,0,0,.07)}
+.ecosystem-card>span,.value-grid article>span{font-size:9px;letter-spacing:.18em;color:#66736d;font-weight:900}
+.ecosystem-card h3{font-size:22px;margin:36px 0 10px;color:#13211c}
+.ecosystem-card p{font-size:13px;color:#4c5853;margin:0;line-height:1.65}
+.ecosystem-card.rede-focus{background:#e8eee8;color:#13211c;border-color:rgba(111,135,122,.34);box-shadow:0 12px 28px rgba(0,0,0,.07)}
+.ecosystem-card.rede-focus>span{color:#6f8a78}
+.ecosystem-card.rede-focus p{color:#405049}
 .ecosystem-note{margin-top:18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center}
 .ecosystem-note strong{font:800 15px Manrope;color:#ffffff}
 .ecosystem-note span{font-size:13px;color:#a7b3ae;line-height:1.6}
@@ -49,6 +49,11 @@
   .hero-icp{grid-template-columns:1fr;gap:5px}
   .value-grid{grid-template-columns:1fr}
 }
+
+
+.ecosystem-card.rede-focus h3{color:#173129}
+.ecosystem-card.rede-focus{position:relative}
+.ecosystem-card.rede-focus:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#a9c846}
 
 </style>
   <link rel="icon" type="image/png" href="rede-logo-monograma-transparente.png?v=3">

@@ -58,3 +58,7 @@ Ajuste de contraste na seção “Onde a REDE entra”: cartões 01 e 02 claread
 
 ## V9.6.2
 Removida a palavra “regionais” do bloco “Para quem”.
+
+
+## V9.6.3
+Os três cartões da seção “Onde a REDE entra” foram unificados em uma paleta clara e elegante. O cartão REDE recebeu apenas um tom verde-sálvia muito suave e uma linha lateral verde para manter destaque sem prejudicar a leitura.
