@@ -132,3 +132,9 @@ Bloco “Para quem” simplificado para melhorar clareza e leitura no mobile.
 
 ## V9.8.7
 Bloco “Para quem” atualizado com a definição final aprovada e ajustes de legibilidade para desktop e mobile.
+
+
+## V9.8.8
+- Texto final do bloco “Para quem” aplicado.
+- Correções de português e clareza no FAQ.
+- Página de Segurança harmonizada com a paleta da página principal no bloco final.
