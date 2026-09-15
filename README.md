@@ -70,3 +70,22 @@ Os três cartões da seção “Onde a REDE entra” foram unificados em uma pal
 - remoção de termos internos e jargões desnecessários;
 - linguagem mais natural, executiva e comercial;
 - simplificação do roadmap público e das descrições técnicas.
+
+
+## V9.7.1
+Ajuste de elegância visual: criação de grids e cards para as seções de problema, como a REDE ajuda, capacidade atual e evolução do produto; tipografia, hierarquia e contraste refinados.
+
+
+## V9.7.2
+Refino de paleta e acabamento: removido o verde-lima neon; acentos substituídos por dourado/bronze sofisticado, com fundos champagne nos blocos de entrada e CTA e detalhes mais alinhados à identidade da REDE.
+
+
+## V9.7.3 — Direção de arte profissional
+- paleta consolidada em azul profundo, dourado/bronze e off-white quente;
+- remoção definitiva da estética verde-lima;
+- melhor equilíbrio entre seções claras e escuras;
+- refinamento de hero, navegação, botões, cards, prova social, FAQ, formulário e CTA;
+- hover e microinterações discretas para sensação de produto premium;
+- melhorias de contraste, hierarquia e responsividade;
+- correção semântica dos passos do diagnóstico (elementos internos não usam mais tags section indevidamente);
+- linguagem visual orientada a SaaS B2B premium / enterprise boutique.
