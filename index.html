@@ -372,6 +372,33 @@ h3{line-height:1.18;letter-spacing:-.022em;font-weight:700}
   }
 }
 
+
+/* V9.8.9 — narrativa visual: da operação à decisão */
+.story-visual{display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:stretch;margin:38px 0 52px}
+.story-image-wrap,.executive-image-wrap{margin:0;position:relative;overflow:hidden;background:#e9e2d6;border:1px solid rgba(16,32,42,.10);box-shadow:0 18px 46px rgba(16,32,42,.08)}
+.story-image-wrap img,.executive-image-wrap img{display:block;width:100%;height:100%;object-fit:cover}
+.story-image-wrap{min-height:420px}
+.story-image-wrap figcaption,.executive-image-wrap figcaption{position:absolute;left:16px;right:16px;bottom:14px;padding:10px 12px;background:rgba(11,23,32,.82);color:#f8f5ef;font-size:10px;line-height:1.45;letter-spacing:.01em;backdrop-filter:blur(8px)}
+.story-copy{background:#f6f2eb;border:1px solid rgba(16,32,42,.10);padding:34px;display:flex;flex-direction:column;justify-content:center}
+.story-copy h3{font:700 clamp(26px,2.4vw,36px)/1.08 Manrope,Inter,Arial,sans-serif;letter-spacing:-.035em;color:var(--navy);margin:4px 0 16px}
+.story-copy p{font-size:15px;line-height:1.72;color:#596568;margin:0}
+.executive-image-wrap{min-height:410px}
+.executive-image-wrap img{aspect-ratio:4/3}
+.demo-wrap{align-items:stretch}
+.demo-wrap>div:first-child{display:flex;flex-direction:column;justify-content:center}
+@media(max-width:980px){
+  .story-visual{grid-template-columns:1fr;gap:18px;margin:30px 0 42px}
+  .story-image-wrap{min-height:0}
+  .story-image-wrap img,.executive-image-wrap img{height:auto;aspect-ratio:4/3}
+  .story-copy{padding:26px}
+}
+@media(max-width:640px){
+  .story-visual{margin:24px 0 34px}
+  .story-copy{padding:22px}
+  .story-copy h3{font-size:26px}
+  .story-image-wrap figcaption,.executive-image-wrap figcaption{position:static;background:#10202a;color:#f8f5ef}
+  .executive-image-wrap{min-height:0}
+}
 </style>
 <link href="rede-logo-monograma-transparente.png?v=3" rel="icon" type="image/png"/>
 <link href="rede-logo-monograma-transparente.png?v=3" rel="shortcut icon" type="image/png"/>
@@ -438,6 +465,16 @@ h3{line-height:1.18;letter-spacing:-.022em;font-weight:700}
 <span class="eyebrow">COMO A SOLUÇÃO FUNCIONA</span>
 <h2>A REDE cria uma linha contínua entre a origem da informação e o resultado da decisão.</h2>
 <p>Ela não precisa substituir os sistemas maduros que já existem. A arquitetura foi pensada para aproveitar as fontes do cliente, organizar o contexto necessário e transformar dados operacionais em uma visão executiva explicável.</p>
+</div><div class="story-visual story-visual-operation">
+<figure class="story-image-wrap">
+<img alt="Engenheiro acompanhando uma obra com tablet" decoding="async" loading="lazy" src="rede-obra-operacao.webp"/>
+<figcaption>Na operação, a informação nasce na obra, no financeiro, nas vendas, nos contratos e no planejamento.</figcaption>
+</figure>
+<div class="story-copy">
+<span class="eyebrow">DA OPERAÇÃO À DECISÃO</span>
+<h3>A REDE começa onde a informação acontece.</h3>
+<p>Cada área conhece uma parte do empreendimento. A REDE conecta essas partes para que uma mudança na operação possa ser entendida junto com seus efeitos no prazo, no caixa e na margem.</p>
+</div>
 </div>
 <div class="architecture-flow">
 <article class="architecture-step"><span>01</span><div><small>FONTES</small><h3>Informações que já existem</h3><p>ERP, CRM, orçamento, engenharia, bancos, documentos, planilhas e outras fontes autorizadas pelo cliente.</p></div></article>
@@ -470,12 +507,6 @@ h3{line-height:1.18;letter-spacing:-.022em;font-weight:700}
 </div>
 </div>
 </section><section class="section entry" id="diagnostico"><div class="container entry-grid"><div><span class="eyebrow">PRODUTO DE ENTRADA</span><h2>Diagnóstico Executivo de Margem e Decisão</h2><p class="lead" style="color:#4f5b60">O primeiro passo não é uma implantação completa. É escolher um empreendimento e uma decisão relevante, entender as fontes envolvidas e medir se a REDE consegue melhorar clareza, velocidade ou previsibilidade.</p><a class="btn" href="#contato">Solicitar diagnóstico</a></div><div class="diag-steps"><div><b>01</b><div class="diag-copy"><strong>Escolha do caso</strong><p>Definir empreendimento, decisão prioritária e janela de análise.</p></div></div><div><b>02</b><div class="diag-copy"><strong>Fontes e evidências</strong><p>Identificar quais informações são necessárias e onde estão.</p></div></div><div><b>03</b><div class="diag-copy"><strong>Leitura conjunta</strong><p>Comparar planejamento, compromissos, realizado e projeção.</p></div></div><div><b>04</b><div class="diag-copy"><strong>Impacto econômico</strong><p>Priorizar reflexos em caixa, margem, prazo, capital e exposição.</p></div></div><div><b>05</b><div class="diag-copy"><strong>Decisão e responsáveis</strong><p>Organizar alternativas, responsáveis, evidências e próximos passos.</p></div></div><div><b>06</b><div class="diag-copy"><strong>Prova de valor</strong><p>Medir o resultado antes de ampliar o uso da plataforma.</p></div></div></div></div></section>
-
-
-
-
-
-
 <section class="section pilot-value">
 <div class="container">
 <div class="section-head">
@@ -491,7 +522,10 @@ h3{line-height:1.18;letter-spacing:-.022em;font-weight:700}
 </div>
 </div>
 </section>
-<section class="section"><div class="container demo-wrap"><div><span class="eyebrow">DEMONSTRAÇÃO DO FLUXO</span><h2>Na prática, a direção começa pelo que mudou.</h2><p class="lead">A interface prioriza exceções e impactos relevantes para reduzir o tempo gasto procurando informação e aumentar o tempo dedicado à decisão.</p><p class="note">Telas reais do produto são apresentadas na demonstração controlada. Não publicamos uma imagem conceitual como se fosse uma captura real do ambiente de produção.</p></div><div><div class="demo-frame"><div class="demo-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="demo-screen"><small>CENTRAL EXECUTIVA · EXEMPLO DE FLUXO</small><div class="demo-title">Exceções que exigem decisão</div><div class="demo-kpis"><div><span>MARGEM</span><strong>-1,8 pp</strong></div><div><span>CAIXA 90D</span><strong>atenção</strong></div><div><span>DECISÕES</span><strong>3 abertas</strong></div></div><div class="demo-exceptions"><div><span>Orçamento de fundações acima da planejamento aprovado</span><em>R$ impacto</em></div><div><span>Recebimentos abaixo da curva prevista</span><em>caixa</em></div><div><span>Contrato aguardando alçada</span><em>decisão</em></div></div></div></div><p class="demo-note">Visualização conceitual do fluxo de decisão; não é captura de tela de ambiente de produção.</p></div></div></section>
+<section class="section"><div class="container demo-wrap"><div><span class="eyebrow">DEMONSTRAÇÃO DO FLUXO</span><h2>Na prática, a direção começa pelo que mudou.</h2><p class="lead">A interface prioriza exceções e impactos relevantes para reduzir o tempo gasto procurando informação e aumentar o tempo dedicado à decisão.</p><p class="note">Na demonstração comercial, apresentamos telas reais do produto. A imagem ao lado ilustra o contexto de uso executivo.</p></div><div><figure class="executive-image-wrap">
+<img alt="Equipe analisando informações da REDE Intelligence em um ambiente corporativo" decoding="async" loading="lazy" src="rede-decisao-executiva.webp"/>
+<figcaption>Imagem conceitual de uso executivo da REDE Intelligence. Dados e interface ilustrativos.</figcaption>
+</figure></div></div></section>
 <section class="section plano de evolução" id="evolucao">
 <div class="container">
 <div class="section-head">

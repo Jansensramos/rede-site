@@ -138,3 +138,10 @@ Bloco “Para quem” atualizado com a definição final aprovada e ajustes de l
 - Texto final do bloco “Para quem” aplicado.
 - Correções de português e clareza no FAQ.
 - Página de Segurança harmonizada com a paleta da página principal no bloco final.
+
+
+## V9.8.9 — imagens integradas
+- Imagem de obra inserida na seção de arquitetura, conectando a origem da informação à decisão.
+- Imagem de ambiente executivo inserida na demonstração de fluxo.
+- Imagens otimizadas em WebP para melhor desempenho.
+- Legendas deixam explícito que a interface executiva mostrada na fotografia é conceitual e usa dados ilustrativos.
