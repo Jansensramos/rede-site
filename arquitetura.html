@@ -1,6 +1,11 @@
-<!DOCTYPE html>
-
-<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>REDE Intelligence — Inteligência de Decisão Imobiliária</title><meta content="A REDE Intelligence conecta fatos econômicos e operacionais da incorporação para mostrar onde a margem está vazando, quais riscos estão crescendo e quais decisões precisam ser tomadas - com evidência, antes que o problema chegue ao caixa." name="description"/><style>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REDE Intelligence — Arquitetura Técnica</title>
+<meta name="description" content="Arquitetura técnica da REDE Intelligence: fontes, modelo de dados, cadeia econômica, decisões, integrações, inteligência artificial e governança.">
+<style>
 :root{--bg:#f2eee7;--paper:#fbf9f5;--paper2:#f6f2eb;--ink:#10202a;--muted:#66706e;--line:rgba(16,32,42,.12);--dark:#0b1720;--dark2:#102632;--navy:#143a5e;--blue:#1a4b78;--gold:#b38a4a;--gold2:#c7a76b;--sand:#e7ddcf;--sage:#87958d;--white:#fbfaf7;--red:#914b48}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.58}a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.nav-wrap{position:sticky;top:0;z-index:80;background:rgba(244,241,235,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand-logo{display:block;width:188px;height:auto}.nav-links{display:flex;align-items:center;gap:18px;font-size:12px;font-weight:800}.nav-links a:hover{opacity:.6}.menu-btn{display:none;border:0;background:none;font-size:25px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 19px;background:var(--ink);border:1px solid var(--ink);color:#fff;font-weight:800;font-size:12px;transition:.18s}.btn:hover{transform:translateY(-1px)}.btn-lime{background:var(--gold);border-color:var(--gold);color:#fff}.btn-ghost{background:transparent;color:var(--ink)}.btn-ghost-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}.eyebrow{display:inline-block;font-size:9px;letter-spacing:.2em;font-weight:900;margin-bottom:16px}.section{padding:88px 0}.section-head{max-width:830px;margin-bottom:40px}.section-head p,.lead{font-size:16px;color:var(--muted)}h1,h2,h3{font-family:Manrope,Inter,Arial,sans-serif;margin-top:0}h1{font-size:clamp(44px,5.4vw,72px);line-height:1.01;letter-spacing:-.052em;margin-bottom:23px}h1 em{font-style:normal;color:#4e5c63}h2{font-size:clamp(33px,4vw,50px);line-height:1.06;letter-spacing:-.042em}h3{letter-spacing:-.025em}.hero{background:radial-gradient(circle at 78% 25%,rgba(184,146,79,.16),transparent 25%),linear-gradient(135deg,#f7f4ee,#efede7);border-bottom:1px solid var(--line)}.hero-grid{min-height:680px;display:grid;grid-template-columns:1.18fr .82fr;gap:58px;align-items:center;padding:70px 0}.hero-copy>p{max-width:760px;font-size:18px;color:#5a676b}.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin:28px 0 34px}.proof-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;border-top:1px solid var(--line);padding-top:18px}.proof-strip strong{display:block;font:800 18px Manrope}.proof-strip span{display:block;font-size:11px;color:var(--muted)}.hero-panel{background:var(--dark);color:#fff;padding:26px;min-height:430px;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(7,17,15,.14)}.hero-panel .tiny{font-size:9px;letter-spacing:.18em;color:#aeb8bc}.hero-panel h3{font-size:27px;line-height:1.15;margin:52px 0 26px}.signal-list{display:grid;gap:9px}.signal{display:grid;grid-template-columns:1fr auto;gap:12px;border-top:1px solid rgba(255,255,255,.14);padding-top:10px;font-size:12px}.signal span{color:#aeb8bc}.signal strong{color:var(--gold)}.hero-panel .bottom{margin-top:auto;border-top:1px solid rgba(255,255,255,.14);padding-top:15px;font-size:10px;color:#aeb8bc}.truth-band{background:#ece6db;border-bottom:1px solid var(--line)}.truth-grid{display:grid;grid-template-columns:repeat(5,1fr)}.truth-grid div{padding:18px;border-right:1px solid var(--line)}.truth-grid div:first-child{border-left:1px solid var(--line)}.truth-grid strong{display:block;font:800 13px Manrope}.truth-grid span{font-size:10px;color:var(--muted)}.problem-grid,.today-grid,.module-grid,.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.problem-grid article,.today-card,.module-card,.faq-item{border:1px solid var(--line);background:rgba(255,255,255,.3);padding:26px}.problem-grid article{min-height:180px}.num{font-size:9px;letter-spacing:.18em;color:var(--muted);font-weight:900}.problem-grid h3,.today-card h3,.module-card h3{font-size:21px;margin:30px 0 7px}.problem-grid p,.today-card p,.module-card p{font-size:13px;color:var(--muted);margin:0}.impact-box{margin-top:20px;background:var(--ink);color:#fff;padding:23px 26px;display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:center}.impact-box span{font-size:9px;color:var(--gold);font-weight:900;letter-spacing:.18em}.impact-box strong{font:700 18px/1.35 Manrope}.dark{background:var(--dark);color:#fff}.dark .section-head p{color:#b6c0c4}.chain{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid rgba(255,255,255,.14);margin:34px 0}.chain div{padding:17px 10px;border-right:1px solid rgba(255,255,255,.14)}.chain div:last-child{border-right:0}.chain span{display:block;font-size:8px;color:var(--gold);margin-bottom:12px}.chain strong{font-size:11px}.triad{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1)}.triad article{padding:26px;background:var(--dark);min-height:175px}.triad h3{font-size:21px;margin-bottom:8px}.triad p{font-size:13px;color:#aeb8bc;margin:0}.status-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}.status-list{display:grid;gap:10px}.status-card{border:1px solid var(--line);background:rgba(255,255,255,.3);padding:20px}.badge{display:inline-flex;padding:5px 8px;font-size:8px;letter-spacing:.13em;font-weight:900;border-radius:2px}.b-now{background:#e8e2d4;color:#6f5526}.b-pilot{background:#dde5ee;color:#36506f}.b-fornecedor{background:#efe5d2;color:#7b6133}.b-dev{background:#e8dfd1;color:#705c3c}.b-road{background:#e7e3dc;color:#5f5a54}.status-card h3{font-size:18px;margin:13px 0 6px}.status-card p{font-size:12px;color:var(--muted);margin:0}.entry{background:linear-gradient(180deg,#e7ddcd 0%,#ddd0bd 100%);border-top:1px solid rgba(13,23,21,.08);border-bottom:1px solid rgba(13,23,21,.08)}.entry-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:62px;align-items:center}.diag-steps{counter-reset:step;border-top:1px solid rgba(13,23,21,.25)}.diag-steps>div{display:grid;grid-template-columns:42px minmax(0,1fr);gap:15px;padding:16px 0;border-bottom:1px solid rgba(13,23,21,.25);align-items:flex-start}.diag-steps b{font:800 13px Manrope}.diag-steps p{font-size:12px;margin:2px 0 0;color:#4f5b60}.compare{background:#0d1b25;color:#fff}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.compare .lead{color:#b6c0c4}.compare-stack{border-top:1px solid rgba(255,255,255,.14)}.compare-stack div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.14)}.compare-stack strong{font:800 13px Manrope}.compare-stack span{font-size:12px;color:#9daaa5}.compare-stack .rede strong{color:var(--gold)}.compare-stack .rede span{color:#fff}.demo-wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.demo-frame{background:var(--dark);padding:14px;border:1px solid #22322e;box-shadow:0 24px 60px rgba(7,17,15,.12)}.demo-bar{display:flex;gap:6px;padding:4px 0 12px}.dot{width:7px;height:7px;border-radius:50%;background:#56635e}.demo-screen{background:#102632;color:#fff;min-height:330px;padding:22px}.demo-screen small{color:#aab5ba}.demo-title{font:800 20px Manrope;margin:8px 0 20px}.demo-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.demo-kpis div,.demo-exceptions div{border:1px solid rgba(255,255,255,.12);padding:12px}.demo-kpis span{display:block;font-size:8px;color:#aab5ba}.demo-kpis strong{font-size:13px}.demo-exceptions{display:grid;gap:7px;margin-top:13px}.demo-exceptions div{display:grid;grid-template-columns:1fr auto;gap:12px;font-size:10px}.demo-exceptions em{font-style:normal;color:var(--gold)}.demo-note{font-size:10px;color:var(--muted);margin-top:8px}.evolution{background:#ebe9e3}.road-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.road-card{border:1px solid var(--line);padding:24px;background:rgba(255,255,255,.32)}.road-card h3{font-size:19px;margin:23px 0 7px}.road-card p{font-size:12px;color:var(--muted)}.road-card ul{padding-left:18px;margin:10px 0 0;font-size:12px;color:var(--muted)}.proof{background:var(--dark);color:#fff}.proof-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}.proof .lead{color:#b6c0c4}.proof-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.proof-stats div{border-top:1px solid rgba(255,255,255,.16);padding-top:16px}.proof-stats strong{display:block;font:800 21px Manrope;color:var(--gold)}.proof-stats span{font-size:11px;color:#a1aea8}.buyer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.buyer-card{border:1px solid var(--line);padding:23px;min-height:190px}.buyer-card span{font-size:8px;letter-spacing:.17em;color:var(--muted);font-weight:900}.buyer-card h3{font-size:18px;margin:28px 0 7px}.buyer-card p{font-size:12px;color:var(--muted)}.faq-item button{width:100%;border:0;background:none;text-align:left;padding:0;font:800 16px Manrope;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:15px}.faq-answer{display:none;padding-top:12px;font-size:13px;color:var(--muted)}.faq-item.open .faq-answer{display:block}.cta{background:linear-gradient(180deg,#e7ddcd 0%,#ddd0bd 100%);border-top:1px solid rgba(13,23,21,.08)}.cta-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:end}.cta-actions{display:flex;flex-direction:column;gap:10px}.cta small{font-size:11px;color:#5a5348}.footer{background:#07100e;color:#fff;padding:34px 0}.footer-grid{display:grid;grid-template-columns:56px 1fr auto;gap:22px;align-items:center}.footer-logo{width:34px;display:block}.footer p{font-size:11px;color:#9da8ad;margin:0}.security-link{color:var(--blue);font-weight:800}.note{font-size:11px;color:var(--muted)}
 @media(max-width:980px){.nav-links{gap:11px}.nav-links a{font-size:10px}.hero-grid,.status-layout,.entry-grid,.compare-grid,.demo-wrap,.proof-grid,.cta-grid{grid-template-columns:1fr}.hero-grid{min-height:auto;padding:60px 0}.truth-grid{grid-template-columns:repeat(2,1fr)}.buyer-grid{grid-template-columns:repeat(2,1fr)}.road-grid{grid-template-columns:1fr 1fr}.chain{grid-template-columns:repeat(2,1fr)}}
@@ -373,301 +378,167 @@ h3{line-height:1.18;letter-spacing:-.022em;font-weight:700}
 }
 
 </style>
-<link href="rede-logo-monograma-transparente.png?v=3" rel="icon" type="image/png"/>
-<link href="rede-logo-monograma-transparente.png?v=3" rel="shortcut icon" type="image/png"/>
-<link href="rede-logo-monograma-transparente.png?v=3" rel="apple-touch-icon"/>
-</head><body>
-<header class="nav-wrap"><nav class="nav container"><a href="#inicio"><img alt="REDE Núcleo de Negócios" class="brand-logo" src="rede-logo-full-transparente.png"/></a><button aria-label="Abrir menu" class="menu-btn">☰</button><div class="nav-links">
-<a href="#problema">O desafio</a>
-<a href="#solucao">O que a REDE faz</a>
-<a href="#como-funciona">Como funciona</a>
-<a href="arquitetura.html">Arquitetura técnica</a>
+
+<link rel="icon" type="image/png" href="rede-logo-monograma-transparente.png?v=3">
+<link rel="shortcut icon" type="image/png" href="rede-logo-monograma-transparente.png?v=3">
+<link rel="apple-touch-icon" href="rede-logo-monograma-transparente.png?v=3">
+
+</head>
+<body>
+<header class="nav-wrap">
+<nav class="nav container">
+<a href="index.html#inicio"><img class="brand-logo" src="rede-logo-full-transparente.png" alt="REDE Intelligence"></a>
+<button class="menu-btn" aria-label="Abrir menu">☰</button>
+<div class="nav-links">
+<a href="index.html">Visão geral</a>
+<a href="#fluxo">Fluxo técnico</a>
+<a href="#dados">Dados e decisões</a>
+<a href="#integracoes">Integrações</a>
+<a href="#ia">Inteligência artificial</a>
 <a href="seguranca.html">Segurança</a>
-<a href="#faq">Perguntas frequentes</a>
-<a class="btn" href="#contato">Solicitar diagnóstico</a>
-</div></nav></header>
+<a class="btn" href="index.html#contato">Falar com a REDE</a>
+</div>
+</nav>
+</header>
+
 <main>
 <section class="hero" id="inicio">
 <div class="container hero-grid">
 <div class="hero-copy">
-<span class="eyebrow">INTELIGÊNCIA DE DECISÃO IMOBILIÁRIA</span>
-<h1>Veja o que mudou. Entenda o impacto. Decida melhor.</h1>
-<p>A REDE conecta obra, financeiro, vendas, contratos e planejamento para mostrar como cada mudança afeta prazo, caixa e margem.</p>
-<div class="hero-signature">Clareza para agir antes que o impacto chegue ao caixa.</div>
-<div class="hero-icp"><span>PARA QUEM</span><strong>Para incorporadoras que precisam estruturar a operação, integrar obra, financeiro, vendas e planejamento, organizar demandas, concentrar informações em um só lugar e tomar decisões com mais eficiência e segurança.</strong></div>
+<span class="eyebrow">ARQUITETURA TÉCNICA</span>
+<h1>Da origem do dado à decisão registrada.</h1>
+<p>A arquitetura da REDE foi desenhada para conectar informações da incorporação sem perder origem, contexto, responsabilidade e histórico.</p>
+<div class="hero-signature">O sistema organiza e recomenda. O mecanismo calcula. O humano aprova. A REDE registra.</div>
 <div class="hero-actions">
-<a class="btn btn-lime" href="#arquitetura">Entender como funciona</a>
-<a class="btn btn-ghost" href="#contato">Solicitar diagnóstico</a>
-</div>
-<div class="proof-strip">
-<div><strong>20+ anos</strong><span>de experiência no mercado imobiliário</span></div>
-<div><strong>R$ 1,6 bi+</strong><span>estruturados em projetos imobiliários</span></div>
-<div><strong>3ª geração</strong><span>em desenvolvimento e gestão imobiliária</span></div>
+<a class="btn btn-lime" href="#fluxo">Ver fluxo técnico</a>
+<a class="btn btn-ghost" href="seguranca.html">Segurança e governança</a>
 </div>
 </div>
 <aside class="hero-panel">
-<span class="tiny">UMA VISÃO PARA DECIDIR</span>
-<h3>Quando uma variável muda, a direção precisa entender o efeito no empreendimento — não procurar respostas em cinco lugares diferentes.</h3>
+<span class="tiny">PRINCÍPIOS DO PRODUTO</span>
+<h3>Uma decisão só é útil quando é possível explicar de onde veio, o que afetou e o que aconteceu depois.</h3>
 <div class="signal-list">
-<div class="signal"><span>O que mudou?</span><strong>fato</strong></div>
-<div class="signal"><span>O que isso afeta?</span><strong>impacto</strong></div>
-<div class="signal"><span>O que precisa acontecer?</span><strong>decisão</strong></div>
-<div class="signal"><span>O que aconteceu depois?</span><strong>resultado</strong></div>
+<div class="signal"><span>Origem preservada</span><strong>proveniência</strong></div>
+<div class="signal"><span>Organizações separadas</span><strong>isolamento</strong></div>
+<div class="signal"><span>Aprovação material</span><strong>humana</strong></div>
+<div class="signal"><span>Histórico consultável</span><strong>auditoria</strong></div>
 </div>
-<div class="bottom">Informação conectada → contexto → impacto → decisão → acompanhamento</div>
+<div class="bottom">dados → contexto → impacto → decisão → resultado</div>
 </aside>
 </div>
-</section><section class="section problem-v98" id="problema">
+</section>
+
+<section class="section architecture-v98" id="fluxo">
 <div class="container">
 <div class="section-head narrative-head">
-<span class="eyebrow">O DESAFIO</span>
-<h2>Uma mudança nunca fica em uma área só.</h2>
-<p>Todos os dias alguma coisa muda no empreendimento. Um custo sobe, uma venda atrasa, um prazo muda ou um contrato exige uma nova decisão. O problema não é registrar cada fato. É entender rapidamente o que ele afeta no restante da operação.</p>
-</div>
-<div class="problem-story">
-<article>
-<span>01</span>
-<h3>Algo muda na operação</h3>
-<p>Obra, compras, vendas, contratos, financeiro e planejamento geram novas informações o tempo todo.</p>
-</article>
-<article>
-<span>02</span>
-<h3>O efeito aparece em outras áreas</h3>
-<p>Uma alteração pode mudar custo final, prazo, recebimentos, necessidade de capital e margem ao mesmo tempo.</p>
-</article>
-<article>
-<span>03</span>
-<h3>A direção precisa juntar as peças</h3>
-<p>Mesmo com bons sistemas, a resposta pode estar dividida entre relatórios, planilhas, documentos, equipes e reuniões.</p>
-</article>
-<article>
-<span>04</span>
-<h3>A decisão precisa chegar antes do problema</h3>
-<p>Quanto mais cedo o impacto é entendido, maior a capacidade de agir antes que ele chegue ao caixa ou comprometa o resultado.</p>
-</article>
-</div>
-<div class="narrative-bridge">
-<span>É aqui que a REDE se diferencia: ela conecta a mudança à consequência econômica e à decisão que precisa ser tomada.</span>
-</div>
-</div>
-</section><section class="section architecture-v98" id="solucao">
-<div class="container">
-<div class="section-head narrative-head">
-<span class="eyebrow">O QUE A REDE FAZ</span>
-<h2>Transforma mudanças na operação em contexto para decisão.</h2>
-<p>A REDE não existe para repetir o que cada sistema já faz. Ela organiza as informações necessárias para mostrar o que mudou, onde está o impacto, quem precisa agir e o que aconteceu depois da decisão.</p>
+<span class="eyebrow">FLUXO TÉCNICO</span>
+<h2>A arquitetura separa origem, cálculo, decisão e aprendizado.</h2>
+<p>Essa separação reduz ambiguidades e permite que cada informação seja rastreada até sua fonte, sem misturar cálculo determinístico com recomendação de inteligência artificial.</p>
 </div>
 <div class="architecture-flow">
-<article class="architecture-step">
-<span>01</span><div><small>MUDANÇA</small><h3>Identifica o fato</h3><p>Um custo, prazo, venda, contrato, recebimento ou outra variável relevante mudou.</p></div>
-</article>
+<article class="architecture-step"><span>01</span><div><small>FONTES</small><h3>Sistemas e documentos</h3><p>ERP, CRM, orçamento, engenharia, bancos, documentos, planilhas e demais fontes autorizadas.</p></div></article>
 <div class="architecture-connector">→</div>
-<article class="architecture-step">
-<span>02</span><div><small>RELAÇÃO</small><h3>Conecta o que foi afetado</h3><p>A informação é relacionada aos demais pontos do empreendimento que dependem dela.</p></div>
-</article>
+<article class="architecture-step"><span>02</span><div><small>MODELO</small><h3>Dados organizados</h3><p>Os fatos relevantes são normalizados em um modelo vertical comum, com origem e organização preservadas.</p></div></article>
 <div class="architecture-connector">→</div>
-<article class="architecture-step">
-<span>03</span><div><small>IMPACTO</small><h3>Mostra a consequência</h3><p>A direção enxerga o efeito sobre prazo, caixa, margem, capital e resultado projetado.</p></div>
-</article>
+<article class="architecture-step"><span>03</span><div><small>CADEIA ECONÔMICA</small><h3>Efeitos relacionados</h3><p>Prazo, custo, venda, recebimento, contrato, obrigação, pagamento e resultado podem ser analisados em conjunto.</p></div></article>
 <div class="architecture-connector">→</div>
-<article class="architecture-step">
-<span>04</span><div><small>DECISÃO</small><h3>Organiza o que precisa acontecer</h3><p>Evidências, responsáveis e próximos passos ficam associados à decisão.</p></div>
-</article>
+<article class="architecture-step"><span>04</span><div><small>DECISÃO</small><h3>Contexto e responsabilidade</h3><p>Evidências, alternativas, alçada, responsável, ação e justificativa ficam associadas ao que foi decidido.</p></div></article>
 <div class="architecture-connector">→</div>
-<article class="architecture-step">
-<span>05</span><div><small>RESULTADO</small><h3>Acompanha o que aconteceu</h3><p>O resultado real volta para o histórico e melhora a leitura das próximas decisões.</p></div>
-</article>
-</div>
-<div class="architecture-principle">
-<strong>Não é apenas integração de sistemas. É integração de contexto, impacto e decisão.</strong>
-<span>Os detalhes de arquitetura, governança, dados e inteligência artificial ficam disponíveis na página técnica.</span>
-<a class="security-link" href="arquitetura.html">Ver arquitetura técnica →</a>
+<article class="architecture-step"><span>05</span><div><small>RESULTADO</small><h3>Comparação e aprendizado</h3><p>O resultado observado volta para o histórico, permitindo comparar intenção, execução e efeito real.</p></div></article>
 </div>
 </div>
-</section><section class="section" id="como-funciona">
+</section>
+
+<section class="section problem-v98" id="dados">
 <div class="container">
 <div class="section-head narrative-head">
-<span class="eyebrow">DA OPERAÇÃO À DECISÃO</span>
-<h2>A informação nasce na operação. A decisão acontece quando as partes são entendidas em conjunto.</h2>
-<p>A REDE acompanha essa passagem: do fato operacional ao contexto executivo, sem exigir que a empresa abandone os sistemas que já funcionam.</p>
+<span class="eyebrow">DADOS E DECISÕES</span>
+<h2>A REDE procura preservar uma única versão explicável do fato.</h2>
+<p>O objetivo não é simplesmente concentrar arquivos. É saber qual informação foi usada, de onde veio, qual versão estava válida e como ela participou de uma decisão.</p>
 </div>
-<div class="demo-wrap">
-<div class="demo-frame">
-<img alt="Engenheiro analisando informações em uma obra" src="rede-operacao-obra.png" style="width:100%;display:block;height:auto"/>
-</div>
-<div>
-<span class="eyebrow">NA OPERAÇÃO</span>
-<h2>É onde a mudança acontece primeiro.</h2>
-<p class="lead">Obra, compras, contratos, vendas, financeiro e planejamento geram fatos que alteram o empreendimento. A REDE preserva a origem dessas informações e conecta o que precisa ser lido em conjunto.</p>
+<div class="problem-story">
+<article><span>01</span><h3>Fonte identificada</h3><p>O dado mantém referência à sua origem e ao contexto em que foi utilizado.</p></article>
+<article><span>02</span><h3>Planejado e realizado</h3><p>A arquitetura compara premissas, compromissos, execução, pagamentos e projeções atualizadas.</p></article>
+<article><span>03</span><h3>Decisão registrada</h3><p>Responsável, evidências, alçada, ação e justificativa podem ser associados ao evento decisório.</p></article>
+<article><span>04</span><h3>Resultado comparável</h3><p>A decisão pode ser confrontada com o que realmente aconteceu para formar memória institucional.</p></article>
 </div>
 </div>
-<div class="demo-wrap" style="margin-top:72px">
-<div>
-<span class="eyebrow">NA DECISÃO</span>
-<h2>É onde o impacto precisa ficar claro.</h2>
-<p class="lead">A direção deixa de procurar respostas em áreas isoladas e passa a analisar a mudança com seu efeito em prazo, caixa e margem, além dos responsáveis, evidências e próximos passos.</p>
-</div>
-<div class="demo-frame">
-<img alt="Equipe analisando a REDE Intelligence em um ambiente corporativo" src="rede-decisao-executiva.png" style="width:100%;display:block;height:auto"/>
-</div>
-</div>
-</div>
-</section><section class="section current-v98" id="hoje">
+</section>
+
+<section class="section current-v98" id="integracoes">
 <div class="container">
 <div class="section-head narrative-head">
-<span class="eyebrow">COMO A REDE ENTRA NA EMPRESA</span>
-<h2>Os sistemas atuais continuam fazendo o que já fazem bem.</h2>
-<p>ERP, CRM, sistemas de obra, bancos, documentos e controles internos podem continuar como fontes oficiais. A REDE usa apenas as informações necessárias para construir uma leitura transversal do empreendimento.</p>
+<span class="eyebrow">INTEGRAÇÕES</span>
+<h2>A arquitetura é independente de fornecedor, mas cada integração real é controlada.</h2>
+<p>A REDE foi desenhada para conviver com sistemas existentes. Isso não significa que todas as integrações estejam previamente ativas para qualquer cliente.</p>
 </div>
 <div class="current-grid">
-<article>
-<span class="status-label">SISTEMAS EXISTENTES</span>
-<h3>Continuam na operação</h3>
-<p>Financeiro, compras, contratos, vendas, obra e demais rotinas permanecem nos sistemas maduros do cliente.</p>
-</article>
-<article>
-<span class="status-label">REDE INTELLIGENCE</span>
-<h3>Conecta a leitura executiva</h3>
-<p>A REDE relaciona os fatos necessários para explicar o impacto de uma mudança no empreendimento.</p>
-</article>
-<article>
-<span class="status-label">INTEGRAÇÕES</span>
-<h3>Entram conforme a necessidade</h3>
-<p>Cada conexão é ativada de forma controlada, com autorização, validação e rastreabilidade no ambiente do cliente.</p>
-</article>
-<article>
-<span class="status-label">DECISÃO</span>
-<h3>Fica registrada e acompanhada</h3>
-<p>Contexto, responsável, ação e resultado formam um histórico que pode ser consultado e comparado ao longo do tempo.</p>
-</article>
+<article><span class="status-label">DESCOBERTA</span><h3>Mapear a fonte</h3><p>Identificar sistema, dados necessários, responsável e finalidade da integração.</p></article>
+<article><span class="status-label">AUTORIZAÇÃO</span><h3>Credenciais e escopo</h3><p>O acesso depende de autorização do cliente e do menor privilégio necessário para o caso de uso.</p></article>
+<article><span class="status-label">VALIDAÇÃO</span><h3>Teste e reconciliação</h3><p>Antes do uso operacional, os dados precisam ser conferidos contra a fonte e o comportamento esperado.</p></article>
+<article><span class="status-label">OPERAÇÃO</span><h3>Registros e reversão</h3><p>Integrações reais precisam de monitoramento, registros técnicos e caminho de reversão quando aplicável.</p></article>
 </div>
 </div>
-</section><section class="section entry" id="diagnostico"><div class="container entry-grid"><div><span class="eyebrow">PRODUTO DE ENTRADA</span><h2>Diagnóstico Executivo de Margem e Decisão</h2><p class="lead" style="color:#4f5b60">O primeiro passo não é uma implantação completa. É escolher um empreendimento e uma decisão relevante, entender as fontes envolvidas e medir se a REDE consegue melhorar clareza, velocidade ou previsibilidade.</p><a class="btn" href="#contato">Solicitar diagnóstico</a></div><div class="diag-steps"><div><b>01</b><div class="diag-copy"><strong>Escolha do caso</strong><p>Definir empreendimento, decisão prioritária e janela de análise.</p></div></div><div><b>02</b><div class="diag-copy"><strong>Fontes e evidências</strong><p>Identificar quais informações são necessárias e onde estão.</p></div></div><div><b>03</b><div class="diag-copy"><strong>Leitura conjunta</strong><p>Comparar planejamento, compromissos, realizado e projeção.</p></div></div><div><b>04</b><div class="diag-copy"><strong>Impacto econômico</strong><p>Priorizar reflexos em caixa, margem, prazo, capital e exposição.</p></div></div><div><b>05</b><div class="diag-copy"><strong>Decisão e responsáveis</strong><p>Organizar alternativas, responsáveis, evidências e próximos passos.</p></div></div><div><b>06</b><div class="diag-copy"><strong>Prova de valor</strong><p>Medir o resultado antes de ampliar o uso da plataforma.</p></div></div></div></div></section>
-<section class="section pilot-value">
+</section>
+
+<section class="section" id="ia">
 <div class="container">
 <div class="section-head">
-<span class="eyebrow">PROVA DE VALOR</span>
-<h2>O piloto só faz sentido se melhorar uma decisão real.</h2>
-<p>Antes de começar, definimos o que precisa melhorar e como isso será medido. Assim, a continuidade depende de valor demonstrado — não de promessa.</p>
+<span class="eyebrow">INTELIGÊNCIA ARTIFICIAL</span>
+<h2>A inteligência artificial apoia o raciocínio; ela não substitui o mecanismo de cálculo nem a aprovação humana.</h2>
+<p>A camada de inteligência foi desenhada para trabalhar sobre contexto selecionado e ferramentas delimitadas, sem transformar uma resposta probabilística em fonte oficial de números do empreendimento.</p>
 </div>
-<div class="value-grid">
-<article><span>01</span><h3>Tempo de consolidação</h3><p>Quanto tempo a direção leva hoje para reunir e reconciliar a informação necessária para decidir?</p></article>
-<article><span>02</span><h3>Antecipação do desvio</h3><p>A mudança relevante passou a aparecer antes de gerar efeito material em margem, caixa ou prazo?</p></article>
-<article><span>03</span><h3>Rastreabilidade</h3><p>É possível reconstruir a origem do número, a evidência, a decisão, o responsável e o resultado?</p></article>
-<article><span>04</span><h3>Previsibilidade</h3><p>A projeção econômica ficou mais confiável e útil para priorizar capital, compras, recebimentos e decisões?</p></article>
+<div class="grid-3">
+<article class="card"><span>01</span><h3>Controle de modelos</h3><p>A camada de acesso a modelos é independente de fornecedor e permite governar chamadas, custo e uso.</p></article>
+<article class="card"><span>02</span><h3>Contexto selecionado</h3><p>A seleção de contexto está em desenvolvimento para entregar à inteligência apenas as evidências relevantes para cada tarefa.</p></article>
+<article class="card"><span>03</span><h3>Decisão humana</h3><p>Capacidades avançadas de agentes, automação e recomendação permanecem em evolução e não são apresentadas como disponíveis antes de validação.</p></article>
 </div>
-</div>
-</section>
-<section class="section">
-<div class="container demo-wrap">
-<div>
-<span class="eyebrow">EXEMPLO CONCRETO</span>
-<h2>O custo da fundação subiu 12%. E agora?</h2>
-<p class="lead">Isoladamente, isso é apenas uma alteração de orçamento. Para a direção, a pergunta relevante é o que essa mudança provoca no custo final, no caixa, na margem e nas decisões seguintes.</p>
-<p class="lead"><strong>A REDE conecta a alteração ao planejamento do empreendimento, mostra os efeitos relacionados, organiza a decisão necessária e acompanha o resultado depois da ação.</strong></p>
-</div>
-<div>
-<div class="demo-frame">
-<div class="demo-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-<div class="demo-screen">
-<small>EXEMPLO DE LEITURA EXECUTIVA</small>
-<div class="demo-title">Mudança detectada: fundação +12%</div>
-<div class="demo-kpis">
-<div><span>CUSTO FINAL</span><strong>impactado</strong></div>
-<div><span>CAIXA</span><strong>reprojetar</strong></div>
-<div><span>MARGEM</span><strong>reavaliar</strong></div>
-</div>
-<div class="demo-exceptions">
-<div><span>Revisar contratação e saldo de orçamento</span><em>ação</em></div>
-<div><span>Avaliar necessidade adicional de capital</span><em>impacto</em></div>
-<div><span>Definir responsável e prazo para decisão</span><em>decisão</em></div>
-</div>
-</div>
-</div>
-<p class="demo-note">Exemplo ilustrativo do raciocínio da solução; os números e efeitos reais dependem dos dados do empreendimento.</p>
+<div class="architecture-principle">
+<strong>Princípio operacional: IA recomenda. Mecanismo calcula. Humano aprova. Sistema registra.</strong>
+<span>O objetivo é preservar explicabilidade e responsabilidade, especialmente em decisões materiais.</span>
 </div>
 </div>
 </section>
 
-
-
-<section class="section" id="faq">
+<section class="section current-v98">
 <div class="container">
-<div class="section-head">
-<span class="eyebrow">PERGUNTAS FREQUENTES</span>
-<h2>O que normalmente precisa ficar claro antes de começar.</h2>
+<div class="section-head narrative-head">
+<span class="eyebrow">ESTADO ATUAL</span>
+<h2>O que está implementado é separado do que depende de piloto ou evolução.</h2>
 </div>
-<div class="faq-grid">
-<div class="faq-item"><button>Isso substitui o ERP que já usamos?<span>+</span></button><div class="faq-answer">Não por definição. Os sistemas maduros podem continuar como fonte oficial das rotinas que já executam bem. A REDE entra para conectar as informações necessárias à leitura do impacto e da decisão.</div></div>
-<div class="faq-item"><button>Qual é a diferença para um painel de indicadores?<span>+</span></button><div class="faq-answer">Um painel apresenta indicadores. A REDE foi desenhada para relacionar uma mudança à sua origem, aos efeitos econômicos, à decisão necessária, ao responsável e ao resultado observado depois.</div></div>
-<div class="faq-item"><button>As integrações já estão todas prontas?<span>+</span></button><div class="faq-answer">Não. Cada integração real depende do ambiente e das autorizações do cliente. A ativação é feita de forma controlada, com validação, registros técnicos e possibilidade de reversão.</div></div>
-<div class="faq-item"><button>A inteligência artificial decide sozinha?<span>+</span></button><div class="faq-answer">Não. A inteligência artificial pode apoiar análises e recomendações, mas decisões materiais permanecem sob aprovação humana e ficam registradas com contexto e responsabilidade.</div></div>
-<div class="faq-item"><button>Como começamos?<span>+</span></button><div class="faq-answer">Começamos por um diagnóstico e por uma situação concreta de um empreendimento. Se a REDE demonstrar valor no caso escolhido, o uso pode ser ampliado de forma modular.</div></div>
-<div class="faq-item"><button>Onde vejo os detalhes técnicos?<span>+</span></button><div class="faq-answer">A página de Arquitetura Técnica explica o fluxo de dados, os princípios do produto, as integrações e a camada de inteligência. <a class="security-link" href="arquitetura.html">Abrir arquitetura técnica →</a></div></div>
-<div class="faq-item"><button>Onde vejo segurança e governança?<span>+</span></button><div class="faq-answer">A página de Segurança e Governança apresenta controles, critérios de produção, acesso e responsabilidades sobre dados. <a class="security-link" href="seguranca.html">Abrir segurança e governança →</a></div></div>
-<div class="faq-item"><button>A REDE usa dados de um cliente para treinar outro?<span>+</span></button><div class="faq-answer">Não por padrão. Qualquer inteligência agregada entre clientes é uma possibilidade futura e dependerá de anonimização adequada, finalidade definida, autorização contratual e governança compatível com a LGPD.</div></div>
+<div class="current-grid">
+<article><span class="status-label">IMPLEMENTADO</span><h3>Núcleo vertical e governança de execução</h3><p>Viabilidade, risco, planejamento, acompanhamento, dados operacionais, histórico de decisões e fundamentos de controle.</p></article>
+<article><span class="status-label">PILOTO</span><h3>Uso com dados reais do cliente</h3><p>O ambiente precisa ser configurado para fontes, permissões, regras e casos de uso reais antes de ampliar a operação.</p></article>
+<article><span class="status-label">DEPENDENTE DO CLIENTE</span><h3>Integrações reais</h3><p>Credenciais, autorizações, testes e validação são necessários para cada ambiente conectado.</p></article>
+<article><span class="status-label">EM EVOLUÇÃO</span><h3>Capacidades cognitivas avançadas</h3><p>Seleção de contexto, agentes especializados, automação assistida e aprendizado ampliado seguem em desenvolvimento gradual.</p></article>
 </div>
 </div>
 </section>
-<section class="section cta" id="contato"><div class="container cta-grid"><div><span class="eyebrow">PRÓXIMO PASSO</span><h2>Vamos começar por uma decisão concreta.</h2><p>Conte qual empreendimento, situação ou decisão está exigindo mais atenção. A primeira conversa serve para entender o contexto e avaliar se existe um caso adequado para diagnóstico e piloto.</p></div><div class="cta-actions">
-<a class="btn" href="https://wa.me/5511915368315?text=Olá%20Jansen%2C%20quero%20conhecer%20a%20REDE%20Intelligence." rel="noopener" target="_blank">Falar pelo WhatsApp</a>
-<a class="btn btn-ghost" href="mailto:jansen.ramos@gmail.com?subject=Contato%20pelo%20site%20da%20REDE">Enviar e-mail</a>
-<small>Contato atual: jansen.ramos@gmail.com · WhatsApp (11) 9.1536-8315</small>
-</div></div>
-<div class="contact-form-card">
-<div class="contact-form-head">
-<span class="eyebrow">FALE COM A REDE</span>
-<h3>Envie sua mensagem</h3>
-<p>Preencha os dados abaixo. A mensagem será encaminhada diretamente para o nosso e-mail.</p>
+
+<section class="section cta">
+<div class="container cta-grid">
+<div>
+<span class="eyebrow">SEGURANÇA E GOVERNANÇA</span>
+<h2>Arquitetura técnica e segurança são tratadas como assuntos complementares.</h2>
+<p>A página de Segurança e Governança detalha acesso, controles, responsabilidades sobre dados e critérios para uso em produção.</p>
 </div>
-<form action="https://formsubmit.co/jansen.ramos@gmail.com" class="contact-form" method="POST">
-<input name="_subject" type="hidden" value="Novo contato pelo site da REDE Intelligence"/>
-<input name="_captcha" type="hidden" value="false"/>
-<input name="_template" type="hidden" value="table"/>
-<input name="_next" type="hidden" value="https://redeintelligence.com.br/?enviado=1#contato"/>
-<input name="_honey" style="display:none" type="text"/>
-<div class="form-grid">
-<label>
-<span>Nome *</span>
-<input autocomplete="name" name="nome" required="" type="text"/>
-</label>
-<label>
-<span>E-mail *</span>
-<input autocomplete="email" name="email" required="" type="email"/>
-</label>
-<label>
-<span>Telefone *</span>
-<input autocomplete="tel" name="telefone" required="" type="tel"/>
-</label>
-<label>
-<span>Assunto *</span>
-<input name="assunto" required="" type="text"/>
-</label>
-<label class="form-full">
-<span>Mensagem *</span>
-<textarea name="mensagem" required="" rows="6"></textarea>
-</label>
+<div class="cta-actions">
+<a class="btn" href="seguranca.html">Abrir Segurança e Governança</a>
+<a class="btn btn-ghost" href="index.html">Voltar ao site principal</a>
 </div>
-<button class="btn contact-submit" type="submit">Enviar mensagem</button>
-<p class="form-note">Ao enviar, você concorda em ser contatado pela REDE sobre esta solicitação.</p>
-</form>
 </div>
 </section>
 </main>
-<footer class="footer"><div class="container footer-grid"><img alt="REDE" class="footer-logo" src="rede-logo-monograma-transparente.png"/><p>REDE Intelligence · Inteligência de Decisão Imobiliária</p><p>© 2026 REDE · <a href="arquitetura.html">Arquitetura Técnica</a> · <a href="seguranca.html">Segurança e Governança</a></p></div></footer>
-<script>const m=document.querySelector('.menu-btn'),n=document.querySelector('.nav-links');if(m&&n)m.onclick=()=>n.classList.toggle('open');document.querySelectorAll('.faq-item button').forEach(b=>b.onclick=()=>b.parentElement.classList.toggle('open'));</script>
+
+<footer class="footer">
+<div class="container footer-grid">
+<img class="footer-logo" src="rede-logo-monograma-transparente.png" alt="REDE">
+<p>REDE Intelligence · Inteligência de Decisão Imobiliária</p>
+<p>© 2026 REDE · <a href="index.html">Visão geral</a> · <a href="seguranca.html">Segurança e Governança</a></p>
+</div>
+</footer>
 <script>
-(function(){
-  const p = new URLSearchParams(window.location.search);
-  if (p.get('enviado') === '1') {
-    const card = document.querySelector('.contact-form-card');
-    if (card) {
-      const ok = document.createElement('div');
-      ok.style.cssText = 'margin-bottom:18px;padding:14px 16px;background:#e7dfd1;color:#6b532d;font-weight:800;font-size:13px;';
-      ok.textContent = 'Mensagem enviada. Obrigado pelo contato.';
-      card.prepend(ok);
-    }
-  }
-})();
+const m=document.querySelector('.menu-btn'),n=document.querySelector('.nav-links');if(m&&n)m.onclick=()=>n.classList.toggle('open');
 </script>
-</body></html>
+</body>
+</html>

@@ -139,9 +139,12 @@ Bloco “Para quem” atualizado com a definição final aprovada e ajustes de l
 - Correções de português e clareza no FAQ.
 - Página de Segurança harmonizada com a paleta da página principal no bloco final.
 
-
-## V9.8.9 — imagens integradas
-- Imagem de obra inserida na seção de arquitetura, conectando a origem da informação à decisão.
-- Imagem de ambiente executivo inserida na demonstração de fluxo.
-- Imagens otimizadas em WebP para melhor desempenho.
-- Legendas deixam explícito que a interface executiva mostrada na fotografia é conceitual e usa dados ilustrativos.
+## V10 — narrativa comercial + arquitetura técnica
+- página principal reorganizada em uma narrativa contínua: mudança → impacto → decisão → resultado;
+- removidas repetições de credenciais e seções internas que desviavam a leitura comercial;
+- novo exemplo concreto de impacto econômico;
+- duas imagens editoriais inseridas para ligar operação e decisão;
+- nova página `arquitetura.html`, separada da página de Segurança;
+- arquitetura técnica explica fontes, modelo de dados, cadeia econômica, decisões, integrações, IA e estado atual;
+- página de Segurança atualizada com navegação para a Arquitetura Técnica;
+- paleta, tipografia, tamanhos e linguagem visual existentes preservados.
